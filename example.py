@@ -66,8 +66,8 @@ def rename_file_on_sharepoint(site_url, username, password, folder_url, old_file
 # メイン処理
 def main():
     # SSH設定
-    ssh_host = "your_ssh_host"
-    ssh_port = 22
+    ssh_host = "your_bastion_host"
+    ssh_port = 1192
     ssh_user = "your_ssh_user"
     ssh_key_path = "path/to/your/private/key"
     local_port_redshift = 5439
@@ -124,4 +124,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
